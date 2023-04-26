@@ -1,3 +1,0 @@
-node_modules
-#siempre agregamos el .env ,en el proyecto final no porq sino no podemos testear
-.env
