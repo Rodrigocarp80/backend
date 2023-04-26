@@ -1,0 +1,13 @@
+[
+    {
+        "id":1,
+        "product": "pendrive",
+        "price": 2500
+    },
+    {
+        "id":2,
+        "product":"mouse",
+        "price": 3200
+        }
+
+]
