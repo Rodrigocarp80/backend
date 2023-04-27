@@ -51,7 +51,8 @@
    if(price>1000) next();
  }
  ,async(req,res) =>{
-    const newProduct = req.body;
+   //console.log('El valor del header es:',req.headers.username) ;
+   const newProduct = req.body;
     const data = await fs.readFile(__dirname+'/src/db/db.txt','utf-8'); 
     const products = JSON.parse(data);
     products.push({id:products.length+1,...newProduct});
@@ -61,6 +62,10 @@
     res.json({message : "Agregando nuevo producto"});
 
  }),
+
+ app.delete('/product/:id', async(req,res)=>{
+
+ });
 
  app.listen(PORT, () => {
     console.log(`Servidor escuchando puerto ${PORT}`);
