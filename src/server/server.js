@@ -1,5 +1,6 @@
 const express = require('express');
-const router = require('../routes/routes')
+const productRouter = require('../routes/prodRoutes');
+
 const server = express();
 
 server.use(express.json());
@@ -8,7 +9,9 @@ server.get('/',(_,res) => {
     res.send('Servidor funcionando');
 });
 
-server.use('/api',router);
+server.use('/api',productRouter);
+
+
 
 
 

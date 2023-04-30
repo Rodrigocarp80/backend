@@ -1,7 +1,12 @@
 const { Schema, model, default: mongoose } = require("mongoose");
 
 const ProdSchema = Schema({
-    marca:{
+    
+    idProd:{
+        type: Number,
+        required:true
+    },
+    brand:{
         type : String,
         required :true
     },
@@ -13,13 +18,9 @@ const ProdSchema = Schema({
         type: String,
         required : true
     },
-    name:{
+    prodname:{
         type:String,
         required:true
-    },
-    isNEw:{
-        type: Boolean,
-        default: false
     }
 });
 
